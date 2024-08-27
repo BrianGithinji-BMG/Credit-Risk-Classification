@@ -9,10 +9,19 @@ Loan defaults can lead to significant financial losses for lending institutions.
 
 ## Objectives
 ### Main Objective
-1. 
+1. To build a predictive model that accurately classifies loan applicants into high-risk and low-risk categories.
 ### Specific Objectives
-1. 
-2. 
+1. To identify and understand key features that influence loan default. i.e:
+
+- Analyze the impact of age on loan default rates.
+- Determine the income brackets most likely to default on loans.
+- Investigate the effect of employment length on loan default.
+- Identify the loan amounts that are most frequently defaulted.
+- Assess how interest rates influence loan default likelihood.
+- Evaluate the relationship between credit history length and loan default.
+- Explore the influence of home ownership status on loan default.
+- Examine which loan intents are most associated with defaults.
+
 ## Business Understanding
 #### Data Source
 The dataset used in this project is sourced from **[Kaggle Datasets](https://www.kaggle.com/datasets)**and contains various features related to the applicant’s demographics, financial status, and loan details. The target variable is a binary indicator representing whether the applicant defaulted on the loan.
