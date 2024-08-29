@@ -44,13 +44,20 @@ The data underwent several preprocessing steps to ensure optimal model performan
 
 ## Key Findings from EDA
 - **Age and Default:** 49% of loan defaulters are young adults aged between 18-25.
+  ![download](https://github.com/user-attachments/assets/3014e2e3-bc3b-4881-a021-0a97c11b0e57)
+
 - **Income Group:** Middle-income earners (40k-60k) represent 29% of loan defaulters.
 - **Employment Length:** Borrowers with 0-5 years of work experience account for 52% of loan defaults.
+  ![download](https://github.com/user-attachments/assets/723455a2-b68b-4ad8-b5d7-30d532d03b36)
+
 - **Loan Amount:** 37% of the loans defaulted are low-value loans ranging between 5k-10k.
 - **Interest Rates:** 53% of defaults occur on loans with high interest rates, especially between 11-15%.
 - **Loan Tenure:** 63% of defaults happen with short-term loans, primarily between 0-5 years.
+  ![download](https://github.com/user-attachments/assets/1865f6a5-e996-4e33-95dd-6af342777d70)
+
 - **Home Ownership:** Renters are more likely to default compared to homeowners.
 - **Loan Intent:** Education loans have the highest default rate, with 20% of borrowers defaulting.
+![download](https://github.com/user-attachments/assets/ae224b0e-2ffb-4e9f-8dba-ef57004500cc)
 
 
 ## Model Development and Evaluation
@@ -74,6 +81,10 @@ The data underwent several preprocessing steps to ensure optimal model performan
 5. Income
 6. Percent Income
 7. Loan Amount
+ 
+
+
+![download](https://github.com/user-attachments/assets/59992f25-210a-46d1-91b7-a2f528928a3e)
 
 ## Model Selection Summary
 - After comparing the models, the **Random Forest model** was selected as the final model due to its superior performance.
