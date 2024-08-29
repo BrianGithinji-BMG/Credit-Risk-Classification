@@ -34,3 +34,48 @@ The Features in our dataset Include:
 - Property Area: Area where the applicant owns property.
 - Education: Education level of the applicant.
 - Loan Status: **Target variable** indicating if the applicant defaulted.
+
+## Data Preprocessing
+The data underwent several preprocessing steps to ensure optimal model performance:
+
+- Handling Missing Values: Missing data was imputed using the mean for numerical columns.
+- Encoding Categorical Variables: Categorical variables were encoded using one-hot encoding, particularly for the features related to loan intent and home ownership.
+- Feature Scaling: Numerical features were scaled using StandardScaler to normalize the data.
+
+## Key Findings from EDA
+- **Age and Default:** 49% of loan defaulters are young adults aged between 18-25.
+- **Income Group:** Middle-income earners (40k-60k) represent 29% of loan defaulters.
+- **Employment Length:** Borrowers with 0-5 years of work experience account for 52% of loan defaults.
+- **Loan Amount:** 37% of the loans defaulted are low-value loans ranging between 5k-10k.
+- **Interest Rates:** 53% of defaults occur on loans with high interest rates, especially between 11-15%.
+- **Loan Tenure:** 63% of defaults happen with short-term loans, primarily between 0-5 years.
+- **Home Ownership:** Renters are more likely to default compared to homeowners.
+- **Loan Intent:** Education loans have the highest default rate, with 20% of borrowers defaulting.
+
+
+## Model Development and Evaluation
+### 1. Logistic Regression
+- Best Parameters: {'C': 0.01, 'penalty': 'l2', 'solver': 'liblinear'}
+- Accuracy: ~55%
+- Model Insights: Although Logistic Regression provided a reasonable baseline, it struggled to effectively distinguish between defaulters and non-defaulters, particularly in reducing false negatives.
+### 2. Decision Tree
+- Accuracy: ~80%
+- Model Insights: The Decision Tree model captured more complex interactions within the data, leading to better performance compared to Logistic Regression. However, the model was susceptible to overfitting.
+### 3. Random Forest (Final Model)
+- Accuracy: ~89%
+- Model Insights: The Random Forest model significantly outperformed the other models, achieving a good balance between precision and recall. It was particularly effective in reducing false negatives, making it a reliable choice for predicting loan defaults.
+
+## Feature Importance Ranking:
+
+1. Credit Length
+2. Employment Length
+3. Age
+4. Interest Rate
+5. Income
+6. Percent Income
+7. Loan Amount
+
+## Model Selection Summary
+- After comparing the models, the **Random Forest model** was selected as the final model due to its superior performance.
+-  It effectively reduces false negatives, which is crucial in identifying high-risk borrowers. The model’s robustness and interpretability make it well-suited for deployment in a real-world financial setting.
+
