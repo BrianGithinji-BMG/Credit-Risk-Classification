@@ -90,3 +90,5 @@ The data underwent several preprocessing steps to ensure optimal model performan
 - After comparing the models, the **Random Forest model** was selected as the final model due to its superior performance.
 -  It effectively reduces false negatives, which is crucial in identifying high-risk borrowers. The model’s robustness and interpretability make it well-suited for deployment in a real-world financial setting.
 
+## LINKS :
+**[CANVA PRESENTATION](https://www.canva.com/design/DAGPQ6N_5bQ/M7sHHsew8ycrQyxsDusGqA/edit?utm_content=DAGPQ6N_5bQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)**
